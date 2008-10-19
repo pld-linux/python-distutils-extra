@@ -11,6 +11,7 @@ Source0:	https://launchpad.net/ubuntu/hardy/+source/python-distutils-extra/1.91.
 # Source0-md5:	413ebd3e52c45437eaa36d1d9e6912fd
 URL:		http://www.glatzor.de/projects/python-distutils-extra/
 BuildRequires:	rpm-pythonprov
+BuildRequires:	python-setuptools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
