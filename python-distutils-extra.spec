@@ -10,6 +10,7 @@ Group:		Libraries/Python
 Source0:	https://launchpad.net/ubuntu/hardy/+source/python-distutils-extra/1.91.2/+files/python-%{module}_%{version}.tar.gz
 # Source0-md5:	413ebd3e52c45437eaa36d1d9e6912fd
 URL:		http://www.glatzor.de/projects/python-distutils-extra/
+BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
