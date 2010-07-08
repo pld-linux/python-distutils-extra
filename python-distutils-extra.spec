@@ -3,7 +3,7 @@ Summary:	Python DistUtilsExtra module
 Summary(pl.UTF-8):	Moduł języka Python - DistUtilsExtra
 Name:		python-distutils-extra
 Version:	1.91.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries/Python
 # from ubuntu
