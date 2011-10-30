@@ -2,13 +2,12 @@
 Summary:	Python DistUtilsExtra module
 Summary(pl.UTF-8):	Moduł języka Python - DistUtilsExtra
 Name:		python-distutils-extra
-Version:	1.91.2
-Release:	2
+Version:	2.30
+Release:	0.9
 License:	GPL
 Group:		Libraries/Python
-# from ubuntu
-Source0:	https://launchpad.net/ubuntu/hardy/+source/python-distutils-extra/1.91.2/+files/python-%{module}_%{version}.tar.gz
-# Source0-md5:	413ebd3e52c45437eaa36d1d9e6912fd
+Source0:	http://launchpad.net/python-distutils-extra/trunk/%{version}/+download/python-%{module}-%{version}.tar.gz
+# Source0-md5:	892804ef5575da9273bde8dd3d2c574f
 URL:		http://www.glatzor.de/projects/python-distutils-extra/
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	python-setuptools
@@ -30,7 +29,7 @@ pythonowych. Może być używany z pythonowymi distutils lub
 rozszerzonymi setuptools.
 
 %prep
-%setup -q -n debian
+%setup -q
 
 %build
 %{__python} setup.py build
