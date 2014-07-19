@@ -2,12 +2,12 @@
 Summary:	Python DistUtilsExtra module
 Summary(pl.UTF-8):	Moduł języka Python - DistUtilsExtra
 Name:		python-distutils-extra
-Version:	2.37
+Version:	2.38
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Libraries/Python
 Source0:	http://launchpad.net/python-distutils-extra/trunk/%{version}/+download/python-%{module}-%{version}.tar.gz
-# Source0-md5:	52cffcd6e8e17ed5aa2f9303683333ef
+# Source0-md5:	4e4c9bee92a3ca8bfd915f3adcf14648
 URL:		http://www.glatzor.de/projects/python-distutils-extra/
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	python-setuptools
@@ -52,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitescriptdir}/DistUtilsExtra/*.py[co]
 %dir %{py_sitescriptdir}/DistUtilsExtra/command
 %{py_sitescriptdir}/DistUtilsExtra/command/*.py[co]
-%{py_sitescriptdir}/python_distutils_extra-*-py*.egg-info
+%{py_sitescriptdir}/python_distutils_extra-%{version}-py*.egg-info
