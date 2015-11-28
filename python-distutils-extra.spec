@@ -3,7 +3,7 @@ Summary:	Python DistUtilsExtra module
 Summary(pl.UTF-8):	Moduł języka Python - DistUtilsExtra
 Name:		python-distutils-extra
 Version:	2.38
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Libraries/Python
 Source0:	http://launchpad.net/python-distutils-extra/trunk/%{version}/+download/python-%{module}-%{version}.tar.gz
