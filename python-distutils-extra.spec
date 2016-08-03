@@ -7,8 +7,8 @@
 %define		pkgname		distutils-extra
 %define 	module		DistUtilsExtra
 %define 	egg_name	python_distutils_extra
-Summary:	Python DistUtilsExtra module
-Summary(pl.UTF-8):	Moduł języka Python - DistUtilsExtra
+Summary:	Python 2 DistUtilsExtra module - i18n, documentation and icons support for distutils
+Summary(pl.UTF-8):	Moduł Pythona 2 DistUtilsExtra - obsługa i18n, dokumentacji i ikon dla distutils
 Name:		python-%{pkgname}
 Version:	2.39
 Release:	1
@@ -21,12 +21,12 @@ BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.710
 %if %{with python2}
 BuildRequires:	python-devel >= 1:2.5
-BuildRequires:	python-modules
+BuildRequires:	python-modules >= 1:2.5
 BuildRequires:	python-setuptools
 %endif
 %if %{with python3}
-BuildRequires:	python3-devel
-BuildRequires:	python3-modules
+BuildRequires:	python3-devel >= 1:3.2
+BuildRequires:	python3-modules >= 1:3.2
 BuildRequires:	python3-setuptools
 %endif
 BuildArch:	noarch
@@ -46,8 +46,8 @@ pythonowych. Może być używany z pythonowymi distutils lub
 rozszerzonymi setuptools.
 
 %package -n python3-%{pkgname}
-Summary:	Python DistUtilsExtra module
-Summary(pl.UTF-8):	Moduł języka Python - DistUtilsExtra
+Summary:	Python 3 DistUtilsExtra module - i18n, documentation and icons support for distutils
+Summary(pl.UTF-8):	Moduł Pythona 3 DistUtilsExtra - obsługa i18n, dokumentacji i ikon dla distutils
 Group:		Libraries/Python
 
 %description -n python3-%{pkgname}
@@ -55,6 +55,13 @@ Python-distutils-extra allows to easily integrate themable icons,
 scrollkeeper based documentation and gettext based translations in
 your Python install and build tools. It can be used with Python's
 distutils or the enhanced setuptools.
+
+%description -n python3-%{pkgname} -l pl.UTF-8
+Ten pakiet pozwala łatwo zintegrować ikony z obsługą motywów,
+dokumentacje opartą na scrollkeeperze i tłumaczenia oparte na
+gettekście w tworzonych narzędziach do budowania i instalacji pakietów
+pythonowych. Może być używany z pythonowymi distutils lub
+rozszerzonymi setuptools.
 
 %prep
 %setup -q
