@@ -11,7 +11,7 @@ Summary:	Python 2 DistUtilsExtra module - i18n, documentation and icons support 
 Summary(pl.UTF-8):	Moduł Pythona 2 DistUtilsExtra - obsługa i18n, dokumentacji i ikon dla distutils
 Name:		python-%{pkgname}
 Version:	2.39
-Release:	3
+Release:	4
 License:	GPL v2
 Group:		Libraries/Python
 Source0:	http://launchpad.net/python-distutils-extra/trunk/%{version}/+download/%{name}-%{version}.tar.gz
